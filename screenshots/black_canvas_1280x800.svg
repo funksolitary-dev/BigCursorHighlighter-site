@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280" height="800" viewBox="0 0 1280 800" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <!-- 黒背景 -->
+  <rect width="1280" height="800" fill="#000000"/>
+
+  <!-- 同じフォルダにある input.png を配置（左側 345px、上 0px） -->
+  <!-- input.png のサイズが 935x700 の場合に合います -->
+  <image href="setting.png" x="345" y="0" width="935" height="700" preserveAspectRatio="none" />
+</svg>
