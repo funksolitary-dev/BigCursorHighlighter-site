@@ -5,17 +5,126 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>BigCursorHighlighter — Support</title>
   <style>
-    body{font-family:system-ui,-apple-system,Arial;max-width:900px;margin:2rem auto;padding:0 1rem;color:#222}
-    h1,h2{color:#111}
-    a{color:#0366d6}
+    html, body { background: #2b2b2b; }
+    body{
+      font-family: system-ui, -apple-system, Arial;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      color: #fff; 
+    }
+    h1,h2{ color: #fff; }
+    a{ color: #4ea1ff; } 
+
+    /* アイコン周り */
+    .title-row { display: flex; align-items: center; gap: 12px; }
+    .app-icon  { width: 64px; height: 64px; display: inline-block; }
+
+    /* 追加: メディアギャラリーのスタイル */
+    .media-section { margin-top: 26px; }
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      align-items: start;
+    }
+    .media-card {
+      background: rgba(255,255,255,0.03);
+      padding: 8px;
+      border-radius: 8px;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.4) inset;
+    }
+    .media-card img,
+    .media-card video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+      background: #000;
+    }
+    .media-caption {
+      margin-top: 6px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.8);
+    }
+    /* added: feature section styling */
+    .features { margin-top: 28px; color: #e9e9e9; }
+    .features h2 { margin-bottom: 8px; color: #fff; }
+    .features p { line-height: 1.6; margin-bottom: 12px; }
+    .features ul { margin: 0 0 16px 1.2rem; }
+    .features li { margin-bottom: 8px; }
   </style>
 </head>
 <body>
-  <h1>Support — BigCursorHighlighter</h1>
+  
+  <h1 class="title-row">
+    <img src="./menuBar.svg" alt="BigCursorHighlighter icon" class="app-icon" />
+    BigCursorHighlighter — Support
+  </h1>
 
+  <section class="media-section" aria-labelledby="media-heading">
+
+    <div class="media-grid">
+      <div class="media-card">
+        <img src="./screenshots/main1.png" alt="Main screenshot 1">
+      </div>
+
+      <div class="media-card">
+        <img src="./screenshots/main2.png" alt="Main screenshot 2">
+      </div>
+
+      <div class="media-card">
+        <img src="./screenshots/setting.png" alt="Settings screenshot">
+      </div>
+
+      <div class="media-card">
+        <video controls poster="./screenshots/preview_30s_poster.png">
+          <source src="./screenshots/preview_30s.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="media-card">
+        <video controls poster="./screenshots/preview_57s_poster.png">
+          <source src="./screenshots/preview_57s.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="media-card">
+        <video controls poster="./screenshots/preview_rest_poster.png">
+          <source src="./screenshots/preview_rest.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+  <!-- ここまで追加: スクリーンショット & プレビュー -->
+
+  <!-- added: Feature description -->
+  <section class="features" aria-labelledby="features-heading">
+    <h2 id="features-heading">Minimal, functional, and beautiful</h2>
+    <p>
+      BigCursorHighlighter helps you find the cursor instantly on high‑resolution displays.
+      Designed for 4K and other high‑DPI screens where the system cursor can easily disappear,
+      the app highlights the pointer with two configurable rings that can be set very large so
+      the area around the cursor becomes visually clear and distraction‑free.
+    </p>
+
+    <h3>Key features</h3>
+    <ul>
+      <li>Large dual‑ring highlight designed for high‑resolution displays — sizeable enough to clear the visual area around the cursor.</li>
+      <li>Full customization of both rings: size, color, opacity, and stroke width for both functional clarity and aesthetic expression.</li>
+      <li>Random color mode: automatically choose random colors while preserving configured opacity — useful for discovering pleasing color combinations.</li>
+      <li>Color harmony modes: auto‑generate complementary or analogous pairs for the two rings, allowing the colors to harmonize.</li>
+      <li>Auto‑hide: the highlight can automatically disappear after 5 seconds of cursor inactivity (configurable).</li>
+      <li>Lightweight, minimal UI that keeps the experience focused and unobtrusive.</li>
+      <li>In‑app purchase: Unlock the Custom Color Picker and choose any color you like — your support is appreciated.</li>
+    </ul>
+  </section>
   <p>If you need support or have questions, please contact:</p>
   <p><a href="mailto:funksolitary@gmail.com">funksolitary@gmail.com</a></p>
 
   <p>You can also find the Privacy Policy here: <a href="./privacy.html">Privacy Policy</a></p>
+
+  
 </body>
 </html>
